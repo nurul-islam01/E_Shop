@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.adminfragments.AddCartFragment"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/adsImage"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/ic_add_to_photos_black"
+            android:elevation="8dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/black_border"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <ImageView
+                android:id="@+id/cardImageIV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_black_24dp"
+                android:background="@drawable/black_border"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+                <EditText
+                    android:id="@+id/productTitleET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/send_border"
+                    android:hint="Title"
+                    android:inputType="text"
+                    android:padding="7dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <EditText
+                    android:id="@+id/productDescriptionET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/send_border"
+                    android:hint="Product Description"
+                    android:inputType="text"
+                    android:padding="7dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/recentPriceET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Recent Price"
+                    android:background="@drawable/send_border"
+                    android:inputType="number"
+                    android:padding="7dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+                <EditText
+                    android:id="@+id/lastPriceET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Last Price"
+                    android:background="@drawable/send_border"
+                    android:inputType="number"
+                    android:padding="7dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    <Spinner
+        android:id="@+id/categorySP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/support_simple_spinner_dropdown_item"
+        android:entries="@array/product_category"
+        style="@android:style/Widget.Material.Spinner"
+        android:layout_marginTop="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/submitBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Product"
+        android:background="@drawable/login_background"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</ScrollView>

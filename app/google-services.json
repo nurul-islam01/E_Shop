@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1030636449248",
+    "firebase_url": "https://eshop-f2200.firebaseio.com",
+    "project_id": "eshop-f2200",
+    "storage_bucket": "eshop-f2200.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030636449248:android:378be39fd2953962",
+        "android_client_info": {
+          "package_name": "com.nurul.e_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030636449248-jq2h3neu858pq70eiejj2rr5tj06oeok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nurul.e_shop",
+            "certificate_hash": "191761e78ca477ea435b4bb3af999a0908028bff"
+          }
+        },
+        {
+          "client_id": "1030636449248-arfrvmt9mkddv82323sasuo3c2benbl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjjuemgx5-sQehlpCh9nrZpZb7lL9zeDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030636449248-arfrvmt9mkddv82323sasuo3c2benbl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

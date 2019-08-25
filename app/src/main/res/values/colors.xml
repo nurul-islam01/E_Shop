@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6122</color>
+    <color name="colorPrimaryDark">#c42c00</color>
+    <color name="colorPrimaryLight">#ff9351</color>
+    <color name="colorAccent">#ff9351</color>
+    <color name="accountBackgroundGrayLight">#E4DEDE</color>
+    <color name="iconColor">#5C5C55</color>
+    <color name="lightGray">#C8E7E7DC</color>
+    <color name="blueColor">#2939A2</color>
+</resources>

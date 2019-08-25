@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.fragment.CartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/loginCCP"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_autoFormatNumber="true"
+        app:ccp_countryPreference="+880"
+        app:ccp_defaultNameCode="+880"
+        app:ccp_areaCodeDetectedCountry="true"
+        app:ccp_rememberLastSelection="true"
+        app:ccpDialog_showPhoneCode="true"
+        app:ccp_showNameCode="false"
+        app:ccpDialog_showNameCode="false"
+        app:ccp_defaultPhoneCode="@integer/fui_min_password_length"/>
+</LinearLayout>

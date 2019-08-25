@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">E Shop</string>
+    <string name="bottom_home">Home</string>
+    <string name="bottom_message">Messages</string>
+    <string name="bottom_cart">Cart</string>
+    <string name="bottom_account">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_application_id">371609043735302</string>
+    <string name="facebook_login_protocol_scheme">fb371609043735302</string>
+    <string name="title_location_permission">Permission is required</string>
+    <string name="text_location_permission">This persmission is need for user sevice perpase. Please Accept it.</string>
+    <string name="ok">OK</string>
+    <string-array name="product_category">
+        <item>Electronic Devices</item>
+        <item>Electronic Accessories</item>
+        <item>TV &amp; Home Appliances</item>
+        <item>Health &amp; Beauty</item>
+        <item>Babies &amp; Toys</item>
+        <item>Groceries &amp; Pets</item>
+        <item>Home &amp; Lifestyle</item>
+        <item>Women\'s Fashion</item>
+        <item>Men\'s Fashion</item>
+        <item>Watches &amp; Accessories</item>
+        <item>Sports &amp; Outdoor</item>
+        <item>Automotive &amp; Motorbike</item>
+    </string-array>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- Twitter consumer key and secret -->
+</resources>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activity.Regestration"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/eshop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_gray"
+            android:background="@android:color/transparent"
+            android:padding="20dp" />
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginCard"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Mobile Number"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="7"
+                    android:layout_marginTop="5dp">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/loginCCP"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_autoFormatNumber="true"
+                        app:ccp_countryPreference="+880"
+                        app:ccp_defaultNameCode="+880"
+                        app:ccp_areaCodeDetectedCountry="true"
+                        app:ccp_rememberLastSelection="true"
+                        app:ccpDialog_showPhoneCode="true"
+                        app:ccp_showNameCode="false"
+                        app:ccpDialog_showNameCode="false"
+                        app:ccp_defaultPhoneCode="@integer/fui_min_password_length"/>
+
+                    <EditText
+                        android:id="@+id/loginPhoneET"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:inputType="phone"
+                        android:layout_weight="4"
+                        android:background="@android:color/transparent"
+                        android:hint="1XXXXXXXXX"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SMS Code"
+                    android:textSize="16sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+                    <EditText
+                        android:id="@+id/loginSMSCodeET"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"/>
+                    <TextView
+                        android:id="@+id/loginSMSCodeTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="SEND"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:background="@drawable/send_border"
+                        android:padding="7dp"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/loginBT"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_background"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signupCard"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+            <EditText
+                android:id="@+id/signUpNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+            <EditText
+                android:id="@+id/signUpEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Mobile Number"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccpSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_autoFormatNumber="true"
+                    app:ccp_countryPreference="+880"
+                    app:ccp_defaultNameCode="+880"
+                    app:ccp_areaCodeDetectedCountry="true"
+                    app:ccp_rememberLastSelection="true"
+                    app:ccpDialog_showPhoneCode="true"
+                    app:ccp_showNameCode="false"
+                    app:ccpDialog_showNameCode="false"
+                    app:ccp_defaultPhoneCode="@integer/fui_min_password_length"/>
+
+                <EditText
+                    android:id="@+id/signUpPhoneET"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:textColor="#ba68c8"
+                    android:layout_weight="4"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"
+                    android:hint="1XXXXXXXXX"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SMS Code"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7">
+                <EditText
+                    android:id="@+id/signUpSMSCodeET"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/signupCOdeSendTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@drawable/send_border"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="SEND" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/darker_gray"/>
+            <Button
+                android:id="@+id/signUpBT"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_background"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Sign up"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+            </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/signUpTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up Now"
+        android:paddingRight="70dp"
+        android:textColor="@color/blueColor"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/loginTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:paddingRight="70dp"
+        android:textColor="@color/blueColor"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleSignInButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </com.google.android.gms.common.SignInButton>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookLogin_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
